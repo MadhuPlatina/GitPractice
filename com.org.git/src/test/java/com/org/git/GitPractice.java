@@ -21,6 +21,9 @@ public class GitPractice {
 		 driver.findElement(By.xpath("//img[@id='logo']")).click();
 		 String ExpectedTitle=driver.getTitle();
 		 Assert.assertEquals(Title, ExpectedTitle);
+		 driver.findElement(By.xpath("//*[@id='top-menu']//*[text()='Locations']")).click();
+		 //Thread.sleep(10);
+		 driver.findElement(By.xpath("//img[@id='logo']")).click();
 
 		
 		
