@@ -18,7 +18,9 @@ public class GitPractice {
 		 String Title=driver.getTitle();
 		 driver.manage().window().maximize();
 		 driver.findElement(By.xpath("//ul[@id='top-menu']//a[text()='Weekly Ad']")).click();
-		 
+		 driver.findElement(By.xpath("//img[@id='logo']")).click();
+		 String ExpectedTitle=driver.getTitle();
+		 Assert.assertEquals(Title, ExpectedTitle);
 
 		
 		
